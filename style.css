@@ -1,0 +1,91 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgb(0, 0, 0,0.5),rgb(0, 0, 0)), url(img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.input_box{
+    width: 40%;
+}
+
+input, textarea{
+    outline: 0;
+    padding: 12px;
+    margin: 19px;
+    width: 100%;
+    color: white;
+    background:transparent;
+    border: 1px solid white;
+}
+
+.input{
+    position: relative;
+}
+
+label{
+    position: absolute;
+    left: 10px;
+    top: 13px;
+    padding: 8px;
+    margin: 10px;
+    height: 100%;
+    color: white;
+    cursor: text;
+    transition: 0.35s;
+
+}
+
+input:focus~label,input:valid~label,
+textarea:focus~label,textarea:valid~label{
+    top: -20px;
+    font-size: 14px;
+}
+
+
+
+
+.grp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grp .input{
+    flex-basis: 48%;
+}
+
+.btn{
+    padding: 10px;
+    margin:19px;
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: 0.2s;
+
+}
+
+.btn:hover{
+    padding: 10px;
+    margin:19px;
+    color: black;
+    background: white;
+    border: 1px solid white;
+    border-radius: 5px;
+
+}
